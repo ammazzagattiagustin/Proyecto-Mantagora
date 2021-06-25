@@ -1,27 +1,27 @@
 /** Header **/
 
 .navbar {
-    list-style-type: none;
-    text-transform: uppercase;
+  list-style-type: none;
+  text-transform: uppercase;
 }
 
 .navbar-list {
-    color: $primary;
-    text-decoration: none !important;
-    font-size: 2.188rem;
+  color: $primary;
+  text-decoration: none !important;
+  font-size: 2.188rem;
 }
 
-.social-media {
-    display: flex;
+.container-icons {
+  display: flex;
+}
+
+.navbar-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 0.5rem;
 }
 
 .logo {
-    width: 25rem;
-    height: 16rem;
-}
-
-.header-icon {
-    width: 4rem;
-    height: 4rem;
-    margin: 0 0.5rem;
+  width: 25rem;
+  height: 16rem;
 }

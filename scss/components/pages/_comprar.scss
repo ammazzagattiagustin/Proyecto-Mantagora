@@ -1,53 +1,83 @@
 /** Comprar **/
 
-.purchase-title {
-    margin: 8rem 0 4rem 0;
+/* Quéres comprar? */
+.buy-title {
+  margin: 8rem 0 8rem 0;
 }
 
-.purchase-image {
-    width: 18rem;
-    height: 18rem;
+.buy-image {
+  width: 18rem;
+  height: 18rem;
 }
 
 .number {
-    font-size: 7rem;
-    font-weight: bold;
-    font-family: $primary-font;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: $primary-font;
+  position: absolute;
+  bottom: 28rem;
+  left: 5.5rem;
 }
 
-.map {
-    width: 35rem;
-    height: 35rem;
+.buy-paragraph {
+  padding: 0 7rem;
 }
 
-.delivery {
-    margin-top: 8rem;
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-icon {
+  width: 1.44rem;
+  height: 1.44rem;
+  margin-right: 1rem;
+}
+
+.payment-method {
+  list-style-type: none;
+}
+
+/* Envíos */
+
+.container-delivery {
+  margin-top: 8rem;
+}
+
+.map-image {
+  width: 35rem;
+  height: 35rem;
 }
 
 .info-delivery {
-    background-image: url(/img/rectangulo1.png);
-    color: white;
-    text-align: center;
+  background-image: url(/img/rectangulo1.png);
+  height: 28rem;
+  color: white;
+  text-align: center;
+  padding: 3rem;
 }
 
 .icon-delivery1 {
-    width: 5.4rem;
-    height: 2.8rem;
+  width: 5.4rem;
+  height: 2.9rem;
 }
 .icon-delivery2 {
-    width: 3rem;
-    height: 4.3rem;
+  width: 3rem;
+  height: 4.3rem;
 }
 
 .text-delivery {
-    text-decoration: underline;
+  text-decoration-line: underline;
 }
 
+/* Colores disponibles */
+
 .color-title {
-    margin: 8rem 0 4rem 0;
+  margin: 8rem 0 5rem 0;
 }
 
 .color-type {
-    width: 14rem;
-    height: 14rem;
+  width: 14rem;
+  height: 14rem;
 }

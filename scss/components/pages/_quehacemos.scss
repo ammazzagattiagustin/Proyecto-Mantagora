@@ -1,19 +1,19 @@
 /** Que Hacemos **/
 
-.main-image {
-    width: 35rem;
-    height: 35rem;
+.products {
+  margin-top: 14rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.first-section {
-    margin-top: 14rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.product-image {
+  width: 35rem;
+  height: 35rem;
 }
 
-.first-paragraph {
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 2rem 0;
+.product-paragraph {
+  font-size: 3rem;
+  margin: 2rem 0;
+  font-family: $primary-font;
 }

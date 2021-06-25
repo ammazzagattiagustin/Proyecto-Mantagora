@@ -1,8 +1,8 @@
 {
-  "author": "Agustin Ammazzagatti",
-  "description": "Proyecto Mantagora",
+  "author": "Nombre e Email",
+  "description": "Sitio Web Coderhouse Camada 10755",
   "license": "MIT",
-  "name": "Proyecto Mantagora",
+  "name": "coder-camada10755",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
     "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js --output-style compressed scss/estilos.scss css/main.css"
