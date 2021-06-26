@@ -1,12 +1,21 @@
 /** Footer **/
 
+footer{
+  p{
+    color: $tertiary;
+  }
+  background-color: $bg-secondary;
+}
 .footer-image {
   width: 24rem;
   height: 24rem;
 }
 
 .footer-title {
+  font-size: 60px;
+  font-weight: bold;
   margin-top: 8rem;
+  color: $secondary;
 }
 
 .footer-icons {
