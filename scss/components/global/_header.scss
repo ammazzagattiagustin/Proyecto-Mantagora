@@ -19,17 +19,36 @@
   margin: 1em;
 }
 
+.navbar-toggler {
+  margin-top: 10%;
+  font-size: x-large;
+}
+
 .container-icons {
   display: flex;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .navbar-icon {
   width: 4rem;
   height: 4rem;
   margin: 0 0.5rem;
+  @media only screen and (max-width: 600px) {
+    width: 2em;
+    height: auto;
+  }
 }
 
 .logo {
   width: 25rem;
   height: 16rem;
+  @media only screen and (max-width: 600px) {
+    width: 15rem;
+    margin-top: 1em;
+    height: auto;
+  }
 }

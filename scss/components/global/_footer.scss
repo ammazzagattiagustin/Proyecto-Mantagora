@@ -6,10 +6,18 @@ footer {
     color: $tertiary;
   }
   background-color: $bg-secondary;
+  @media only screen and (max-width: 600px) {
+    padding-top: 4em;
+  }
 }
 .footer-image {
   width: 24rem;
   height: 24rem;
+
+  @media only screen and (max-width: 600px) {
+    width: 17rem;
+    height: auto;
+  }
 }
 
 .footer-title {
@@ -25,4 +33,16 @@ footer {
 
 .footer-icon {
   margin: 0 1.5rem;
+}
+
+.footerFotos {
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+      vertical-align: inherit;
+      margin-top: 2em;
+    }
+  }
 }
