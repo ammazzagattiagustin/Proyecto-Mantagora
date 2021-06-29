@@ -4,8 +4,7 @@
   width: 40rem;
   height: 52rem;
 
-  @media only screen and (max-width: 600px){
-
+  @media only screen and (max-width: 768px) {
     width: auto;
     height: auto;
   }
@@ -27,26 +26,28 @@
     color: $tertiary;
   }
 
-  @media only screen and (max-width: 600px) {
-    margin-top: -146vh;
-    
-  }
-  margin-top: -111vh;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 30%,
+    $bg-secondary 30%,
+    $bg-secondary 100%
+  );
 }
 
-.fondoSecundario {
-  background-color: $bg-secondary;
-  height: 75vh;
-  margin-top: 20%;
-
-  @media only screen and (max-width: 600px) {
-    height: 85vh;
-    margin-top: 70%;
-  }
-}
-
-.tituloFoto{
-
+.tituloFoto {
   display: flex;
-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.parrafo {
+  @media only screen and (min-width: 600px) {
+    margin-top: inherit;
+  }
+  @media only screen and (min-width: 768px) {
+    margin-top: 10em;
+  }
+}
+.mb-5{
+  justify-content: center;
 }

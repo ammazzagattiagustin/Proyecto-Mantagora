@@ -18,34 +18,61 @@
       integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
       crossorigin="anonymous"
     />
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  
+			  crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css/fontawesome.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
+    
   </head>
 
-  <body>
+  <body class="">
     <!-- Header-->
     <header>
-      <div class="contenedor">
-        <nav class="navbar navbar-expand-lg navbar-light rounded">
+      <div class="container" >
+        <nav class="navbar navbar-expand-lg navbar-light rounded ">
           <div class="container-fluid">
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbars" aria-controls="navbarsExample10" aria-expanded="false"
               aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+            <a href="/"><img class="logo  d-lg-none" src="img/imagen1.png" alt="logo" /></a>
+            <div class="container-icons d-lg-none">
+              <li>
+                <a href="">
+                  <img class="navbar-icon" src="img/Componente1.png" alt="redes-sociales" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="navbar-icon" src="img/Componente2.png" alt="redes-sociales" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img class="navbar-icon" src="img/Componente3.png" alt="redes-sociales" />
+                </a>
+              </li>
+            </div>
             <div class="navbar-collapse justify-content-md-center collapse" id="navbars">
+              
               <ul class="navbar navbar-nav">
-                <li><a class="navbar-list" href="#nosotras">Nosotras</a></li>
+                <div  class="d-block d-lg-none"><i id="cerrar" class="fas fa-times"></i></div>
+                
                 <li><a class="navbar-list" href="#quehacemos">¿Qué hacemos?</a></li>
+                <li><a class="navbar-list" href="#comprar">Comprar</a></li>
                 <li>
                   <a href="/"><img class="logo d-none d-lg-block" src="img/imagen1.png" alt="logo" /></a>
                 </li>
-                <li><a class="navbar-list" href="#comprar">Comprar</a></li>
+                <li><a class="navbar-list" href="#nosotras">Nosotras</a></li>
+                
                 <div class="container-icons d-none d-lg-flex">
                   <li>
                     <a href="">
@@ -65,24 +92,7 @@
                 </div>
               </ul>
             </div>
-            <a href="/"><img class="logo  d-lg-none" src="img/imagen1.png" alt="logo" /></a>
-            <div class="container-icons d-lg-none">
-              <li>
-                <a href="">
-                  <img class="navbar-icon" src="img/Componente1.png" alt="redes-sociales" />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img class="navbar-icon" src="img/Componente2.png" alt="redes-sociales" />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img class="navbar-icon" src="img/Componente3.png" alt="redes-sociales" />
-                </a>
-              </li>
-            </div>
+           
           </div>
         </nav>
       </div>
@@ -91,10 +101,10 @@
     <main>
       <section id="quehacemos" class="container">
         <div class="row products">
-          <div class="col-6 col-md-6 text-center">
+          <div class="col-5 col-md-5 text-center">
             <img class="product-image" src="img/imagen2.png" alt="imagen2" />
           </div>
-          <div class="col-6 col-md-6">
+          <div class="col-7 col-md-6">
             <h1>Mantas y almohadones</h1>
             <p class="product-paragraph">100% vellón</p>
             <p>Medidas standard y personalizadas.</p>
@@ -106,32 +116,32 @@
       <section id="comprar" class="container-fluid">
         <h1 class="text-center buy-title">¿Querés comprar?</h1>
         <div class="row text-center">
-          <div class="col-12 col-md-4">
-            <div>
+          <div class="col-12 col-md-4 pasoCompra">
+              
               <p class="number">1.</p>
               <img class="buy-image" src="img/imagen3.png" alt="imagen3" />
-            </div>
+            
             <p class="mt-5 buy-paragraph">
               Mirá nuestros productos. Si te interesa alguno escribínos a
               nuestras redes o Whatsapp.
             </p>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 pasoCompra">
             <p class="number">2.</p>
             <img class="buy-image" src="img/imagen4.png" alt="imagen4" />
             <p class="mt-5 buy-paragraph">
-              Una vez te contactes, podrás elegir el color y el tamaño de tu
+            Una vez te contactes, podrás elegir el color y el tamaño de tu
               Mantagora.
             </p>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 pasoCompra">
             <p class="number">3.</p>
             <img class="buy-image" src="img/imagen5.png" alt="imagen5" />
             <div>
               <p class="mt-5 buy-paragraph">
                 Realiza tu pago y espera tu Mantagora:
               </p>
-              <ul>
+              <ul class="mt-5 buy-paragraph">
                 <div class="payment">
                   <img class="payment-icon" src="img/Pol+¡gono 1.png" alt="" />
                   <li class="payment-method">Depósito</li>
@@ -186,16 +196,17 @@
           </div>
         </div>
       </section>
-<div class="fondoSecundario"></div>
-      <section id="nosotras" class="container">
+
+      <section id="nosotras">
+        <div class="container">
         <div class="row about-us text-center">
           <div class="tituloFoto col-12 col-md-6">
             <img class="photo" src="img/imagen10.png" alt="imagen10" />
-            <h1 class="mb-5">Nosotras</h1>
+            <h1 class="mb-5 d-block d-md-none">Nosotras</h1>
           </div>
           <div class="col-12 col-md-6">
-           
-            <div>
+            <h1 class="mb-5 d-none d-md-flex">Nosotras</h1>
+            <div class="parrafo">
               <p>
                 ¡Hola! Somos Agus y Lara creadoras de Mantagora, un
                 emprendimiento de mantas y almohadones tejidos en vellón.
@@ -207,6 +218,7 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
     
     </main>
@@ -251,5 +263,18 @@
         <img class="footer-image" src="img/imagen14.png" alt="imagen14" />
       </div>
     </footer>
+    
+    <script>
+      /*manejo de botones del menu header*/
+      $("#cerrar").click(function(){
+        $("#navbars").toggleClass("show");
+      })
+      
+      $(".navbar li").click(function(){
+        //$(".navbar-toggler").click();
+        $("#navbars").toggleClass("show");
+      })
+      </script>
   </body>
+ 
 </html>

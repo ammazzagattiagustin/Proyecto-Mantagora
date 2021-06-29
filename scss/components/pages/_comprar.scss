@@ -2,30 +2,51 @@
 
 /* Quéres comprar? */
 .buy-title {
-  margin: 8rem 0 8rem 0;
+  margin: 8rem 0 -3rem 0;
+
+  @media only screen and (max-width: 768px) {
+    margin: 8rem 0 6rem 0;
+    font-size: x-large;
+  }
 }
 
 .buy-image {
-  width: 18rem;
-  height: 18rem;
+  width: 27rem;
+  height: 27rem;
+
+  /*@media only screen and (max-width: 600px) {
+    width: 13rem;
+    height: 13rem;
+  }*/
+  @media only screen and (max-width: 768px){
+    width: 13rem;
+    height: 13rem;
+  }
 }
 
 .number {
   font-size: 10rem;
   font-weight: bold;
   font-family: $primary-font;
-  position: absolute;
-  bottom: 28rem;
-  left: 5.5rem;
 }
 
 .buy-paragraph {
   padding: 0 7rem;
+  text-align: left;
+  margin-left: 1em;
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+    font-size: medium;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .payment {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -43,20 +64,27 @@
 
 .container-delivery {
   margin-top: 8rem;
+  justify-content: space-between;
+  margin-left: auto;
 }
 
 .map-image {
   width: 35rem;
-  height: 35rem;
+  margin-bottom: 7em;
 }
 
 .info-delivery {
   //background-image: url(img/rectangulo1.png);
   background-color: $bg-secondary;
-  height: 28rem;
+  height: 33rem;
   color: white;
   text-align: center;
   padding: 3rem;
+
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    max-width: 95%;
+  }
 }
 
 .icon-delivery1 {
@@ -81,4 +109,48 @@
 .color-type {
   width: 14rem;
   height: 14rem;
+}
+
+.pasoCompra {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 2em;
+  //align-items: center;
+  .number {
+    font-size: 4rem;
+    min-width: 11%;
+  }
+  /*
+  */
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    .number {
+      font-size: 8rem;
+      min-width: 11%;
+      text-align: left;
+    }
+    img{
+      align-self: center;
+  
+    }
+    p{
+      align-self: center;
+      width: 60%;
+    }
+  }
+}
+
+.mt-5 {
+  @media only screen and (max-width: 600px) {
+    margin-top: 0 !important;
+  }
+}
+
+#comprar {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }

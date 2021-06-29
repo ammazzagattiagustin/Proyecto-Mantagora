@@ -5,15 +5,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  h1{
+    font-size: 6rem;
+
+    @media only screen and (max-width: 768px){
+
+      font-size: 2rem;
+    } 
+  }
+
+  p{
+    font-size: 2.5rem;
+    @media only screen and (max-width: 768px){
+
+      font-size: inherit;
+    } 
+  }
 }
 
 .product-image {
-  width: 35rem;
+  width: 50rem;
+
+  
+  @media only screen and (max-width: 768px){
+
+    width: 25rem;
+  } 
   
 }
 
 .product-paragraph {
-  font-size: 3rem;
+  font-size: 5rem!important;
   margin: 2rem 0;
   font-family: $primary-font;
+  
+
+  @media only screen and (max-width: 768px){
+
+    font-size: 2rem!important;
+  }
 }
