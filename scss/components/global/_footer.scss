@@ -44,10 +44,11 @@ footer {
 }
 
 .footerFotos {
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 769px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
     img {
       vertical-align: inherit;
       margin-top: 2em;

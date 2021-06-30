@@ -7,7 +7,7 @@
 }
 .navbar {
   width: 100%;
-  //margin: 0em 19em 0em 6em;
+  
   list-style-type: none;
   text-transform: uppercase;
   background-color: $bg-primary;
@@ -21,7 +21,7 @@
 }
 
 .navbar-toggler {
-  //margin-top: 10%;
+
   font-size: x-large;
 }
 
@@ -46,7 +46,7 @@
 
 .logo {
   width: 15rem;
-  //height: 16rem;
+  
   @media only screen and (max-width: 600px) {
     width: 15rem;
     margin-top: 1em;
@@ -67,23 +67,41 @@
     z-index: 9;
   }
 }
-
-.navbar-nav {
+.menu{
   @media only screen and (max-width: 992px) {
     background:$bg-secondary;
     border-radius: 1em;
-    height: 40vh;
+    height: 45vh;
     margin-top: 5%;
-    flex-direction: column;
-    justify-content: center;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     z-index: 69;
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     top: 0;
     left: 0;
     right: 0;
+    #cerrar{
+      color: grey;
+      text-align: right;
+      margin: 4% 7% 0 5%;
+    }
+    #cerrar:hover{
+      color: white;
+    }
+  }
+}
+.navbar-nav {
+  @media only screen and (max-width: 992px) {
+    background:transparent;
+    border-radius: 1em;
+    height: 35vh;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 69;
     .navbar-list {
       color: $secondary;
       z-index: 10;
@@ -98,8 +116,11 @@
       margin-right: 10%;
       margin-top: 2%;
     }
-    #cerrar:hover {
+    li a:hover{
       color: white;
     }
   }
+}
+#cerrar{
+  margin-bottom: 0;
 }

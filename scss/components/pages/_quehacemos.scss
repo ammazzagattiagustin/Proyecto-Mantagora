@@ -13,6 +13,12 @@
 
       font-size: 2rem;
     } 
+
+    
+    @media only screen and (min-width: 769px){
+
+      font-size: 4rem;
+    } 
   }
 
   p{
@@ -22,6 +28,8 @@
       font-size: inherit;
     } 
   }
+  
+  
 }
 
 .product-image {
@@ -44,5 +52,11 @@
   @media only screen and (max-width: 768px){
 
     font-size: 2rem!important;
+  }
+
+  
+  @media only screen and (min-width: 769px){
+
+    font-size: 3rem!important;
   }
 }

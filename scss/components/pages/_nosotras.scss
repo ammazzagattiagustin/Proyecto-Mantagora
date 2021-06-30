@@ -33,6 +33,12 @@
     $bg-secondary 30%,
     $bg-secondary 100%
   );
+  margin-top: 18rem;
+  h1{
+    font-size: x-large;
+  }
+
+  
 }
 
 .tituloFoto {
@@ -50,4 +56,13 @@
 }
 .mb-5{
   justify-content: center;
+}
+.nosotrasTitle{
+  @media only screen and (min-width: 600px) {
+    margin-top: inherit;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    margin-top: 10rem;
+  }
+  
 }
