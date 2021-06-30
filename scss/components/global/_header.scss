@@ -7,7 +7,7 @@
 }
 .navbar {
   width: 100%;
-  
+
   list-style-type: none;
   text-transform: uppercase;
   background-color: $bg-primary;
@@ -21,7 +21,6 @@
 }
 
 .navbar-toggler {
-
   font-size: x-large;
 }
 
@@ -46,7 +45,7 @@
 
 .logo {
   width: 15rem;
-  
+
   @media only screen and (max-width: 600px) {
     width: 15rem;
     margin-top: 1em;
@@ -56,20 +55,19 @@
 
 #navbars {
   @media only screen and (max-width: 992px) {
-  
     height: 100vmax !important;
     position: absolute;
     top: 15%;
     width: 100%;
     left: 0%;
     top: 0;
-    background-color:$bg-menu;
+    background-color: $bg-menu;
     z-index: 9;
   }
 }
-.menu{
+.menu {
   @media only screen and (max-width: 992px) {
-    background:$bg-secondary;
+    background: $bg-secondary;
     border-radius: 1em;
     height: 45vh;
     @media (orientation: landscape) {
@@ -84,19 +82,19 @@
     top: 0;
     left: 0;
     right: 0;
-    #cerrar{
+    #cerrar {
       color: grey;
       text-align: right;
       margin: 4% 7% 0 5%;
     }
-    #cerrar:hover{
+    #cerrar:hover {
       color: white;
     }
   }
 }
 .navbar-nav {
   @media only screen and (max-width: 992px) {
-    background:transparent;
+    background: transparent;
     border-radius: 1em;
     height: 35vh;
     @media (orientation: landscape) {
@@ -122,11 +120,11 @@
       margin-right: 10%;
       margin-top: 2%;
     }
-    li a:hover{
+    li a:hover {
       color: white;
     }
   }
 }
-#cerrar{
+#cerrar {
   margin-bottom: 0;
 }

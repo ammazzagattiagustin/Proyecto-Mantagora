@@ -34,11 +34,9 @@
     $bg-secondary 100%
   );
   margin-top: 18rem;
-  h1{
+  h1 {
     font-size: x-large;
   }
-
-  
 }
 
 .tituloFoto {
@@ -54,15 +52,14 @@
     margin-top: 10em;
   }
 }
-.mb-5{
+.mb-5 {
   justify-content: center;
 }
-.nosotrasTitle{
+.nosotrasTitle {
   @media only screen and (min-width: 600px) {
     margin-top: inherit;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     margin-top: 10rem;
   }
-  
 }
