@@ -62,39 +62,82 @@
   margin-top: 8rem;
   justify-content: space-between;
   margin-left: auto;
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .map-image {
-  width: 35rem;
+  width: 45rem !important;
   margin-bottom: 7em;
 }
 
 .info-delivery {
   background-color: $bg-secondary;
-  height: 33rem;
   color: white;
   text-align: center;
   padding: 3rem;
+  height: 38rem;
 
   @media only screen and (max-width: 600px) {
     height: auto;
     max-width: 95%;
+    margin-bottom: 5em;
+  }
+  @media only screen and (min-width: 600px) and (orientation: landscape) {
+    margin-bottom: 5em;
   }
 }
 
 .icon-delivery1 {
-  width: 5.4rem;
-  height: 2.9rem;
+  width: 6.4rem;
 }
 .icon-delivery2 {
-  width: 3rem;
-  height: 4.3rem;
+  width: 50%;
+
+  color: $bg-rectangulo;
 }
 
 .text-delivery {
   text-decoration-line: underline;
 }
 
+.elemento-delivery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 17%;
+  align-items: center;
+}
+
+.texto-pedido {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  @media screen and (min-width: 768px) and (orientation: portrait) {
+    font-size: medium;
+  }
+  @media screen and (min-width: 768px) and (orientation: landscape) {
+    width: 50%;
+  }
+}
+.mitad {
+  @media screen and (max-width: 600px), (orientation: landscape) {
+    width: 50%;
+  }
+
+  //font-size: smaller;
+}
+.texto-moto {
+  text-align: left;
+}
 /* Colores disponibles */
 
 .color-title {
